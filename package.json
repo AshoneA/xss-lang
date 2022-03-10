@@ -1,0 +1,25 @@
+{
+    "name": "xss",
+    "displayName": "xss",
+    "description": "xss",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.65.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "xss",
+            "aliases": ["xss", "xss"],
+            "extensions": ["xss"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "xss",
+            "scopeName": "source.xss",
+            "path": "./syntaxes/xss.tmLanguage.json"
+        }]
+    }
+}

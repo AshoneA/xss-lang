@@ -1,0 +1,21 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "xss",
+	"patterns": [{ "include": "#bold" }, { "include": "#italic" }],
+	"repository": {
+	  "bold": {
+		"name": "markup.bold.xss",
+		"begin": "\\*",
+		"patterns": [{ "include": "#italic" }],
+		"end": "\\*"
+	  },
+	  "italic": {
+		"name": "markup.italic.xss",
+		"begin": "_",
+		"end": "_",
+		"patterns": [{ "include": "#bold" }]
+	  }
+	},
+	"scopeName": "source.xss"
+  }
+  
